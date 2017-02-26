@@ -6,7 +6,7 @@ const defaultConfig = {
 };
 
 let config = defaultConfig;
-let isActive = false;
+let isActive = config.default;
 let firstLoad = true;
 
 const debug = function () {
