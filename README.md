@@ -1,7 +1,7 @@
 # hyper-always-on-top
 Extension for [Hyper.app](https://hyper.is) to add a menu item to keep application windows always on top.
 
-![Screenshot](https://cloud.githubusercontent.com/assets/4137761/23342457/ed609bea-fc5a-11e6-94a4-9fea87470dcb.png)
+![Screenshot](https://cloud.githubusercontent.com/assets/4137761/23342934/6658c074-fc63-11e6-8894-71d4aa47dc3d.png)
 
 ## Install
 
