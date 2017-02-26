@@ -30,7 +30,7 @@ module.exports = {
     // other configs...
     alwaysOnTop: {
       debug: false,
-      default: yes // enabled on application start
+      default: true // enabled on application start
     }
   }
   //...
@@ -39,7 +39,7 @@ module.exports = {
 
 ## Credits
 
-Originally developped by @henrikdahl as a [pull request](https://github.com/zeit/hyper/pull/1560)
+Originally developed by @henrikdahl as a [pull request](https://github.com/zeit/hyper/pull/1560)
 
 ## Licence
 
