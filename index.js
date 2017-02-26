@@ -69,7 +69,7 @@ exports.decorateMenu = (menu) => {
     });
 
     newMenuItem.submenu.push({
-      label: 'Always On Top',
+      label: 'Float on Top',
       type: 'checkbox',
       checked: isActive,
 
