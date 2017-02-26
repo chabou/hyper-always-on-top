@@ -39,7 +39,7 @@ module.exports = {
 
 ## Credits
 
-Originally developed by @henrikdahl as a [pull request](https://github.com/zeit/hyper/pull/1560)
+Originally developed by [@henrikdahl](https://github.com/henrikdahl) as a [pull request](https://github.com/zeit/hyper/pull/1560)
 
 ## Licence
 
