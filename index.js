@@ -2,7 +2,7 @@ const merge = require('lodash.merge');
 
 const defaultConfig = {
   debug: false,
-  default: true
+  default: false
 };
 
 let config = defaultConfig;
