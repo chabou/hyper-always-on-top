@@ -26,7 +26,13 @@ function setActive(newState) {
   isActive = newState;
   if (app_) {
     debug('setActive on windows', newState);
-    app_.getWindows().forEach(win => win.setAlwaysOnTop(isActive));
+    app_.getWindows().forEach(win => {
+      if (!win.isMinimized()) {
+        win.once('minimize', win.setAlwaysOnTop(false));
+        win.setAlwaysOnTop(isActive);
+      }
+      win.once('restore', win.setAlwaysOnTop(isActive));
+    });
   }
 }
 
