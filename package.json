@@ -1,8 +1,7 @@
 {
   "name": "hyper-always-on-top",
-  "version": "1.0.3",
-  "description":
-    "Extension for Hyper.app to optionally keep application windows always on top",
+  "version": "1.0.4",
+  "description": "Extension for Hyper.app to optionally keep application windows always on top",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -14,7 +13,13 @@
     "type": "git",
     "url": "git+https://github.com/chabou/hyper-always-on-top.git"
   },
-  "keywords": ["hyper", "hyper.app", "hyperterm", "shell", "hyper-plugin"],
+  "keywords": [
+    "hyper",
+    "hyper.app",
+    "hyperterm",
+    "shell",
+    "hyper-plugin"
+  ],
   "author": "CHaBou",
   "license": "MIT",
   "bugs": {
@@ -22,8 +27,13 @@
   },
   "homepage": "https://github.com/chabou/hyper-always-on-top#readme",
   "eslintConfig": {
-    "plugins": ["prettier"],
-    "extends": ["eslint:recommended", "prettier"],
+    "plugins": [
+      "prettier"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
     "parserOptions": {
       "ecmaVersion": 8,
       "sourceType": "module",
@@ -39,7 +49,10 @@
       "browser": true
     },
     "rules": {
-      "func-names": ["error", "as-needed"],
+      "func-names": [
+        "error",
+        "as-needed"
+      ],
       "no-shadow": "error",
       "no-extra-semi": 0,
       "no-console": 0,
