@@ -9,8 +9,8 @@ let config = defaultConfig;
 let isActive = config.default;
 let firstLoad = true;
 
-const debug = function () {
-  if (config.debug){
+const debug = function() {
+  if (config.debug) {
     [].unshift.call(arguments, '|HYPER-ALWAYS-ON-TOP|');
     console.log.apply(this, arguments);
   }
@@ -43,18 +43,18 @@ exports.decorateConfig = globalConfig => {
   return globalConfig;
 };
 
-exports.onApp = (app) => {
+exports.onApp = app => {
   debug('onApp', isActive);
   app_ = app;
   app_.getWindows().forEach(win => win.setAlwaysOnTop(isActive));
 };
 
-exports.onWindow = (win) => {
+exports.onWindow = win => {
   debug('onWindow', isActive);
   win.setAlwaysOnTop(isActive);
 };
 
-exports.decorateMenu = (menu) => {
+exports.decorateMenu = menu => {
   debug('decorateMenu isActive', isActive);
   return menu.map(menuItem => {
     if (menuItem.label !== 'View') {
@@ -72,14 +72,11 @@ exports.decorateMenu = (menu) => {
       label: 'Float on Top',
       type: 'checkbox',
       checked: isActive,
-
-      click: (item) => {
+      click: item => {
         setActive(item.checked);
       }
     });
 
     return newMenuItem;
   });
-}
-
-
+};
