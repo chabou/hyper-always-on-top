@@ -1,6 +1,6 @@
 {
   "name": "hyper-always-on-top",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Extension for Hyper.app to optionally keep application windows always on top",
   "main": "index.js",
   "scripts": {
